@@ -1,0 +1,29 @@
+{
+  "name": "neon-editor",
+  "version": "0.0.0",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup",
+    "test": "cd ./test && bun run dev",
+    "dev": "tsup --watch"
+  },
+  "devDependencies": {
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.3"
+  },
+  "keywords": [
+    "editor",
+    "neon editor",
+    "torq",
+    "torq editor",
+    "torq ide"
+  ],
+  "author": "Sairam Kagitha",
+  "license": "GPL-3.0-only",
+  "description": "A Code Editor used in Torq IDE",
+  "repository": {
+    "url": "https://github.com/torq-ide/neon-editor.git"
+  }
+}

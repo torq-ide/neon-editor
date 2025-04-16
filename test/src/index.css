@@ -1,0 +1,73 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  padding: 0;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-height: 100vh;
+  padding: 4rem;
+  height: 100vh;
+  width: 100%;
+  background-color: #181818;
+}
+
+.editor {
+  height: 100%;
+  width: 100%;
+  background-color: #444444;
+  border-radius: 8px;
+  font-size: 1.5rem;
+}
+
+.neon-editor {
+  background: #181825;
+  color: #cdd6f4;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.neon-editor .neon-cursor {
+  display: inline-block;
+  width: 1px;
+  background: #f5e0dc;
+  height: 1em;
+  vertical-align: bottom;
+  animation: neonblink 1s steps(1) infinite;
+}
+
+.neon-editor .neon-selection {
+  background: #45475a;
+  color: #f5c2e7;
+}
+
+@keyframes neonblink {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
